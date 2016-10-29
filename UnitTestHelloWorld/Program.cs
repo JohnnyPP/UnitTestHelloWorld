@@ -11,6 +11,7 @@ namespace UnitTestHelloWorld
         static void Main(string[] args)
         {
             PrintToConsole();
+            PrintFromClass();
         }
 
         public static string PrintToConsole()
@@ -20,5 +21,15 @@ namespace UnitTestHelloWorld
 
             return output;
         }
+
+        public static string PrintFromClass()
+        {
+            string output = "Hello world from class";
+            ConsolePrint.PrintToConsoleFromClass(output);
+
+            return output;
+        }
+
+
     }
 }

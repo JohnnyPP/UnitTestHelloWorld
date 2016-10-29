@@ -12,6 +12,7 @@ namespace UnitTestHelloWorld
         {
             PrintToConsole();
             PrintFromClass();
+            CalculateSum();
         }
 
         public static string PrintToConsole()
@@ -28,6 +29,11 @@ namespace UnitTestHelloWorld
             ConsolePrint.PrintToConsoleFromClass(output);
 
             return output;
+        }
+
+        public static void CalculateSum()
+        {
+            Console.WriteLine(Calc.CalculateSum(24.5, 3.4));
         }
 
 

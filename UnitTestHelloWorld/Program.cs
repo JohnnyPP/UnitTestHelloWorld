@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace UnitTestHelloWorld
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
+            PrintToConsole();
+        }
+
+        public static string PrintToConsole()
+        {
+            string output = "Hello world";
+            Console.WriteLine(output);
+
+            return output;
         }
     }
 }

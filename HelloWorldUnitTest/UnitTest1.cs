@@ -13,5 +13,14 @@ namespace HelloWorldUnitTest
 
             Assert.AreEqual("Hello world", result);
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            string input = "Hello world from class";
+            string result = UnitTestHelloWorld.ConsolePrint.PrintToConsoleFromClass(input);
+
+            Assert.AreEqual(input, result);
+        }
     }
 }
